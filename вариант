@@ -1,0 +1,51 @@
+def celsius_to_kelvin(celsius):
+    return celsius + 273.15
+
+def kelvin_to_celsius(kelvin):
+    return kelvin - 273.15
+
+def celsius_to_fahrenheit(celsius):
+    return (celsius * 9/5) + 32
+
+def fahrenheit_to_celsius(fahrenheit):
+    return (fahrenheit - 32) * 5/9
+
+def kelvin_to_fahrenheit(kelvin):
+    return (kelvin - 273.15) * 9/5 + 32
+
+def fahrenheit_to_kelvin(fahrenheit):
+    return (fahrenheit - 32) * 5/9 + 273.15
+
+def main():
+    print("Выберите тип конвертации:")
+    print("1. Цельсий в Кельвин")
+    print("2. Кельвин в Цельсий")
+    print("3. Цельсий в Фаренгейт")
+    print("4. Фаренгейт в Цельсий")
+    print("5. Кельвин в Фаренгейт")
+    print("6. Фаренгейт в Кельвин")
+    choice = int(input("Введите номер: "))
+
+    if choice == 1:
+        celsius = float(input("Введите температуру в градусах Цельсия: "))
+        print(f"Кельвин: {celsius_to_kelvin(celsius)}")
+    elif choice == 2:
+        kelvin = float(input("Введите температуру в Кельвинах: "))
+        print(f"Цельсий: {kelvin_to_celsius(kelvin)}")
+    elif choice == 3:
+        celsius = float(input("Введите температуру в градусах Цельсия: "))
+        print(f"Фаренгейт: {celsius_to_fahrenheit(celsius)}")
+    elif choice == 4:
+        fahrenheit = float(input("Введите температуру в Фаренгейтах: "))
+        print(f"Цельсий: {fahrenheit_to_celsius(fahrenheit)}")
+    elif choice == 5:
+        kelvin = float(input("Введите температуру в Кельвинах: "))
+        print(f"Фаренгейт: {kelvin_to_fahrenheit(kelvin)}")
+    elif choice == 6:
+        fahrenheit = float(input("Введите температуру в Фаренгейтах: "))
+        print(f"Кельвин: {fahrenheit_to_kelvin(fahrenheit)}")
+    else:
+        print("Неверный выбор. Попробуйте снова.")
+
+if name == "main":
+    main()
